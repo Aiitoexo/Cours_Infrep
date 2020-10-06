@@ -74,12 +74,33 @@
 // console.log(d, e);
 
 // Exercice prompt
+//
+// let questionName = "Quel est ton prénom ?";
+// let name = prompt(questionName);
+//
+// let questionLastName = "Quel est ton nom ?";
+// let lastName = prompt(questionLastName);
+//
+// console.log("La personne s'appel " + name + " " + lastName)
 
-let questionName = "Quel est ton prénom ?";
-let name = prompt(questionName);
+//Exercice TVA
 
-let questionLastName = "Quel est ton nom ?";
-let lastName = prompt(questionLastName);
+const TVA = 0.2;
 
-console.log("La personne s'appel " + name + " " + lastName)
+let resultPrice = prompt("Rentrer un prix hors taxe en euro.");
 
+let price = parseFloat(resultPrice);
+
+let TTC = price + (price * TVA);
+
+alert("Le prix TTC est de " + TTC + "€");
+
+//Exercice Temperature
+
+let resultCelcius = prompt("Rentrer une température en Celcius.");
+
+let celcius = parseFloat(resultCelcius);
+
+let fahrenheit = ((celcius * 9/5) + 32).toFixed(0);
+
+alert("La température en fahrenheit de " + celcius + "°C est de " + fahrenheit + "°F");
