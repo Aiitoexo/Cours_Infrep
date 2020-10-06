@@ -1,0 +1,63 @@
+
+.box-magique{
+    box-sizing: border-box;
+}
+
+/*bsz*/
+
+/* Sélecteur universel, (sélectionne tous les éléments) */
+* {
+    /*
+        Ré-initialise le modèle de boite, pour qu'on ait un bloc de 300px
+        quand on définit une largeur de 300px, meme s'il a une bordure
+        ou des marges
+     */
+    box-sizing: border-box;
+}
+
+/* Sélectionne tous les éléments <h1> */
+h1 {
+    color: cadetblue;
+    font-style: italic;
+    font-size: 80px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Sélectionne l'élément qui a l'identifiant "intro" */
+#intro {
+    font-weight: bold;
+}
+
+/* Sélectionne tous les éléments qui ont la classe "demo" */
+.custom-button {
+    font-weight: bold;
+    background-color: #a095d0;
+}
+
+.with-inner-space {
+    /*
+        Plusieurs manières d'écrire les propriétés
+        (valable pour padding, margin, border)
+    */
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+
+    /* notation raccourcie : (Equivaut au code ci-dessus) */
+    padding: 60px 80px 40px 30px;
+
+    /* Même marge (30px) a droite et a gauche, 60 en haut, 120 en bas */
+    padding: 60px 30px 120px;
+
+    /* Même marge (30px) a droite et a gauche, et même marge de 60px en haut et en bas */
+    padding: 60px 30px;
+
+    /* Même marge partout */
+    padding: 30px;
+}
+
+.with-outer-space {
+    margin: 30px; /* marges externes */
+}
