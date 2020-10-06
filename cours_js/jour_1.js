@@ -56,19 +56,30 @@
 // b doit avoir la valeur 5
 // (Plusieurs solutions possibles !)
 
-let a = 5;
-let b = 3;
-let c = a;
+// let a = 5;
+// let b = 3;
+// let c = a;
+//
+// a = b;
+// b = c;
+//
+// console.log(a, b);
+//
+// let d = 5;
+// let e = 3;
+//
+// d = 3;
+// e = 5;
+//
+// console.log(d, e);
 
-a = b;
-b = c;
+// Exercice prompt
 
-console.log(a, b);
+let questionName = "Quel est ton prénom ?";
+let name = prompt(questionName);
 
-let d = 5;
-let e = 3;
+let questionLastName = "Quel est ton nom ?";
+let lastName = prompt(questionLastName);
 
-d = 3;
-e = 5;
+console.log("La personne s'appel " + name + " " + lastName)
 
-console.log(d, e);
