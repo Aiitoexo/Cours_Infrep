@@ -1,0 +1,32 @@
+.maclasse {
+    background: #f50000;
+    padding: 50px;
+}
+
+#monid {
+    border: solid 10px black;
+    padding: 50px;
+    margin: 50px;
+}
+
+div {
+    background: #149205;
+    padding: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    text-transform: capitalize;
+    margin: 20px;
+}
+

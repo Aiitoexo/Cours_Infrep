@@ -1,0 +1,13 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.rtl {
+    text-align: right;
+}
+
+.bloc {
+    margin: 60px 20px 20px 20px;
+}
+

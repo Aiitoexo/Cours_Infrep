@@ -1,0 +1,12 @@
+.button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: rgb(16,255,97);
+    background-image: linear-gradient(90deg, rgba(16,255,97,1) 0%, rgba(0,255,246,1) 100%, rgba(9,121,93,1) 100%);
+    box-shadow: 0 4px 10px black;
+    margin-right: 40px;
+    border-radius: 50px;
+    transition: background-color 2s;
+}
+
