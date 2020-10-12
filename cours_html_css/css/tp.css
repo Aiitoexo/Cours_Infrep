@@ -36,7 +36,7 @@ aside {
 
 .img-profile {
     border-radius: 100%;
-    border: 2px solid white;
+    border: 3px solid white;
     width: 180px;
 }
 
@@ -235,15 +235,14 @@ h3, h4, p {
 
 .border-1 {
     height: auto;
-    width: 2px;
+    width: 3px;
     margin-left: 75px;
-    background-color: #4a4a4a;
+    background-color: #797979;
 }
 
 .border-2 {
     height: auto;
-    width: 2px;
+    width: 3px;
     margin-left: 75px;
-    background-color: #4a4a4a;
+    background-color: #797979;
 }
-

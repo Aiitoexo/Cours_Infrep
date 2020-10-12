@@ -235,7 +235,7 @@ let minute = prompt("Rentrez des minutes.");
 let second = prompt("Rentrez des secondes.");
 
 if (isNaN(hour) || isNaN(minute) || isNaN(second) || hour === "" || hour === null || minute === "" || minute === null || second === "" || second === null) {
-    alert("Ce n'est pas une heure.")
+    alert("Ce n'est pas une heure.");
 } else {
     hour = Number(hour);
     minute = Number(minute);
@@ -280,5 +280,81 @@ if (isNaN(hour) || isNaN(minute) || isNaN(second) || hour === "" || hour === nul
     alert(hourNext);
 }
 
+// CORRECTION /////////////////////////////////////////////////////////////////////////////////////////////////////////
+let hour;
+let minute;
+let second;
+
+hour = prompt("Donnez une heure.");
+
+// Saisie et validation des données
+if (hour !== null) { // s'il n'a pas cliqué sur "annuler"
+    hour = Number(hour);
+    if (!Number.isNaN(hour) && hour > 0) { // si c'est un nombre valide ...
+
+        // ... alors on peut demander les minutes
+        minute = prompt("Donnez une minute.")
+
+        if (minute !== null) {
+            minute = Number(minute);
+            if (!Number.isNaN(minute) && minute > 0) {
+
+                second = prompt("Donnez une second.")
+
+                if (second !== null) {
+                    second = Number(second);
+                    if (!Number.isNaN(second) && second > 0) {
+
+                        // ici le code "intéressant", c.a.d le code métier
+
+                        // ----------------------------------------------------------------------------------
+                        // 1. traitement de données (ici on avance d'une heure)
+                        // ----------------------------------------------------------------------------------
+
+                        // On "incrémente" les secondes
+                        second = second + 1;
+
+                        // Si le nombre des secondes est trop grand ...
+                        if (second > 59) {
+                            // On "reset"
+                            second = 0;
+                            // et on incrémente les minutes de 1
+                            minute = minute + 1;
+                        }
+
+                        if (minute > 59) {
+                            minute = 0;
+                            // on incrémente les heures de 1
+                            hour++;
+                        }
+
+                        if (hour > 23) {
+                            hour = 0;
+                        }
+
+
+                        // ----------------------------------------------------------------------------------
+                        // 2. affichage des données
+                        // ----------------------------------------------------------------------------------
+
+                        if (second < 10) {
+                            second = "0" + second;
+                        }
+
+                        if (minute < 10) {
+                            minute = "0" + minute;
+                        }
+
+                        if (hour < 10) {
+                            hour = "0" + hour;
+                        }
+
+                        console.log("Il sera " + hour + ":" + minute + ":" + second);
+                    }
+                }
+            }
+        }
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
