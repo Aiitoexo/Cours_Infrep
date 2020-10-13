@@ -176,9 +176,14 @@ if (nombre2 % 2 === 0) {
 
 /////////////////////////////////////////////////// CORRECTION ////////////////////////////////////////////////////////
 
-let start = prompt('Nombre de départ');
-let end =  prompt('Nombre de fin');
+console.time("IMPLEMENTATION 1")
 
+let start = 0;
+let end = 10000;
+
+
+// let start = prompt('Nombre de départ');
+// let end =  prompt('Nombre de fin');
 // TODO: valider les données !
 
 for (let i = start; i <= end; i++) {
@@ -195,7 +200,26 @@ for (let i = start; i <= end; i++) {
         console.log(i);
     }
 }
+console.timeEnd("IMPLEMENTATION 1");
 
+// Implémentation (plus performante ? )
+// Compter de deux en deux pour faire moins de tours de boucle
+
+console.time("IMPLEMENTATION 2");
+start = 0;
+end = 10000;
+
+// on s'assure que start est "pair",
+// s'il est impair, on lui ajoute 1
+if (start % 2 !== 0) {
+    start++;
+}
+
+for (let i = start; i <= end; i += 2) {
+    console.log(i);
+}
+
+console.timeEnd("IMPLEMENTATION 2");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // let data = 1;
 //
