@@ -1,0 +1,179 @@
+body {
+    margin: 0px 0;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.bloc {
+    display: flex;
+    background-color: orange;
+    height: 160px;
+    width: 160px;
+    margin: 20px 10px;
+}
+
+.container-2 {
+    display: flex;
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.bloc-2 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    margin: 5px  ;
+}
+
+.container-3 {
+    display: flex;
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.bloc-3 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    margin: 5px  ;
+}
+
+
+.bloc-4 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 100%;
+    margin: 5px;
+}
+
+.container-4{
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.container-bloc{
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-5 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    flex: 1;
+    margin: 10px;
+}
+
+.container-bloc-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-6 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 50%;
+    margin: 5px;
+}
+
+.container-5 {
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.container-bloc-2 {
+    display: flex;
+    width: 100%;
+}
+
+.bloc-7 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    flex: 1;
+    margin: 5px;
+}
+
+.container-bloc-2 {
+    display: flex;
+}
+
+.container-bloc-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bloc-8 {
+    display: flex;
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+}
+
+.container-6 {
+    width: auto;
+    background-color: #a095d0;
+    height: 400px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-9 {
+    display: flex;
+    background-color: orange;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+
+}
+
+.bloc-10 {
+    display: flex;
+    background-color: orange;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    margin-right: auto;
+}
+
+
+.bloc-11 {
+    display: flex;
+    background-color: orange;
+    height: 160px;
+    width: 160px;
+    margin: 5px;
+    margin-left: auto;
+}
+
