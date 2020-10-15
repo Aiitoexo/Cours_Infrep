@@ -1,15 +1,21 @@
 
 .bg-color {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 50, 184, 1) 28%, rgb(213, 255, 252) 100%);
+    background: linear-gradient(180deg, #001430, #0163bc, #6fc9ff, #6fc9ff, #60bfff);
+    background-size: 1000% 1000%;
     width: 550px;
     height: 900px;
-    margin: 0 auto;
-    margin-top: 35px;
+    margin: 35px auto 0;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid #d4d4d4;
-    box-shadow: inset 0px 0px 50px -1px rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 50px -1px rgba(0, 0, 0, 0.75);
+    animation: bg-color 10s ease infinite;
+}
+
+@keyframes bg-color {
+    0%{background-position:50% 0}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0}
 }
 
 .cloud-1, .cloud-1:before, .cloud-1:after,
@@ -20,13 +26,20 @@
     background-color: #ffffff;
 }
 
+@keyframes cloud-1 {
+    0% {
+        transform: translate(-800px);
+    }
+}
+
 .cloud-1 {
     height: 30px;
     width: 100px;
     border-radius: 15px;
     top: 200px;
-    left: 400px;
+    left: 700px;
     box-shadow: 5px 5px 50px #242424;
+    animation: cloud-1 7s linear 1s infinite running;
 }
 
 .cloud-1:after {
@@ -49,13 +62,20 @@
     left: 30px;
 }
 
+@keyframes cloud-2 {
+    0% {
+        transform: translate(-1300px);
+    }
+}
+
 .cloud-2 {
     height: 20px;
     width: 70px;
     border-radius: 15px;
     top: 270px;
-    left: 50px;
+    left: 900px;
     box-shadow: 5px 5px 50px #242424;
+    animation: cloud-2 10s linear 1s infinite running;
 }
 
 .cloud-2:after {
@@ -78,13 +98,20 @@
     left: 20px;
 }
 
+@keyframes cloud-3 {
+    0% {
+        transform: translate(-1000px);
+    }
+}
+
 .cloud-3 {
     height: 30px;
     width: 90px;
     border-radius: 15px;
     top: 370px;
-    left: 290px;
+    left: 900px;
     box-shadow: 5px 5px 50px #242424;
+    animation: cloud-3 9s linear 1s infinite running
 }
 
 .cloud-3:after {
@@ -107,14 +134,21 @@
     left: 48px;
 }
 
+@keyframes cloud-4 {
+    0% {
+        transform: translate(-1500px);
+    }
+}
+
 .cloud-4 {
     height: 40px;
     width: 130px;
     border-radius: 30px;
     top: 90px;
-    left: 160px;
+    left: 1000px;
     box-shadow: 5px 5px 50px #242424;
     background-color: #fff;
+    animation: cloud-4 9s linear 1s infinite running
 }
 
 .cloud-4:after {
@@ -304,7 +338,7 @@
     height: 300px;
     width: 600px;
     top: 850px;
-    left: 0px;
+    left: 0;
     z-index: 22;
 }
 
@@ -316,8 +350,15 @@
     background: radial-gradient(circle, rgba(251, 255, 188, 1) 0%, rgba(255, 209, 0, 1) 33%, rgba(255, 175, 0, 1) 50%, rgb(255, 29, 0) 100%);
     border-radius: 100%;
     left: 420px;
-    top: 480px;
+    top: 800px;
     box-shadow: 0 0 50px #ff8c00;
+    animation: sun-1 10s linear 1s infinite reverse running
+}
+
+@keyframes sun-1 {
+    0% {
+        transform: translate(0px, -1500px);
+    }
 }
 
 .leaf-1 {
@@ -474,11 +515,18 @@
     height: 130px;
     width: 130px;
     border-radius: 100px;
-    top: -30px;
+    top: -160px;
     left: -30px;
     box-shadow: 0 0 50px #ffffff;
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 74%, rgba(113, 113, 113, 1) 97%, rgba(0, 0, 0, 1) 100%);
+    animation: moon 5s linear infinite alternate running;
+}
+
+@keyframes moon {
+    0% {
+        transform: translate(0px, 140px);
+    }
 }
 
 .star-1, .star-2, .star-3,
@@ -489,6 +537,13 @@
     border-radius: 100px;
     background-color: white;
     box-shadow: 0 0 10px #ffffff;
+    animation: star 10s linear 0s infinite  ;
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+    }
 }
 
 .star-1 {
@@ -526,11 +581,25 @@
     position: absolute;
 }
 
+@keyframes plane {
+    0% {
+        transform: translate(-1000px, -50px);
+    }
+    50% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0px, -150px);
+    }
+
+}
+
 .plane {
     top: 450px;
-    left: 300px;
-    transform: rotateY(160deg) rotate(10deg);
+    left: 600px;
+    transform: rotate(10deg);
     z-index: 50;
+    animation: plane 6s linear 1s infinite reverse running;
 }
 
 .plane-hidden {
@@ -568,7 +637,7 @@
 }
 
 .wings {
-    border-radius: 10% 80% 0% 100% / 0% 100% 0% 100%;
+    border-radius: 10% 80% 0 100% / 0 100% 0 100%;
     width: 20px;
     height: 40px;
     background-color: #b5b5b5;
@@ -579,7 +648,7 @@
 }
 
 .wings-back {
-    border-radius: 66% 34% 77% 23% / 100% 0% 100% 0%;
+    border-radius: 66% 34% 77% 23% / 100% 0 100% 0;
     width: 20px;
     height: 40px;
     background-color: #b5b5b5;
@@ -608,15 +677,15 @@
     transform: rotate(-9deg);
 }
 
-.wind, .wind-1, .wind-2,
+.wind, .wind-2,
 .wind-3, .wind-4, .wind-5,
 .wind-6, .wind-7 {
     position: absolute;
-    top: 240px;
-    left: 90px;
+    top: -200px;
+    left: 190px;
 }
 
-.wind-1, .wind-2, .wind-3, .wind-4,
+.wind-2, .wind-3, .wind-4,
 .wind-5, .wind-6, .wind-7 {
     background-color: white;
     height: 1px;
