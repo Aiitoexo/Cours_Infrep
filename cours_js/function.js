@@ -52,7 +52,28 @@
 // } else {
 //     console.log("Ce nest pas un chiffre impair")
 // }
-
+///////////////////////////////////////////////// CORRECTION //////////////////////////////////////////////////////////
+// function isEven(nb) {
+//     if (nb % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// function isEven(nb) {
+//     if (nb % 2 === 0) {
+//         // "early return", une astuce pour couper l'execution de la fonction
+//         // (ici, ca rend le "else" superflu)
+//         return true;
+//     }
+//
+//     return false;
+// }
+//
+// function isEven(nb) {
+//     return nb % 2 === 0;
+// }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // function getSquare(number) {
@@ -64,23 +85,79 @@
 // let answer = prompt("Rentrer un chiffre")
 //
 // console.log(getSquare(answer))
+///////////////////////////////////////////////// CORRECTION //////////////////////////////////////////////////////////
+// function isOdd(nb) {
+//     return !isEven(nb);
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// function getSquare(number) {
+//     if (notNumber(number)) {
+//         number = number * number
+//         return number
+//     } else {
+//         return false
+//     }
+// }
+//
+// let answer = prompt("Rentrer un chiffre")
+// if (getSquare(answer)) {
+//     console.log("Le carre de " + answer + " est " + getSquare(answer))
+// } else {
+//     console.log("Ce nest pas un chiffre")
+// }
 
+///////////////////////////////////////////////// CORRECTION //////////////////////////////////////////////////////////
+// function square(nb) {
+//
+//     if (typeof nb !== "number") {
+//         return null; // early return !
+//     }
+//
+//     let result = nb * nb;
+//     return result;
+// }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function notNumber (number) {
-    if (number !== 0 && number !== null && number !== "" && !Number(isNaN(number))) {
-        return true
-    } else {
-        return null
+// function getAge (age) {
+//     let isAge = age
+//     if (isAge >= 1950 && isAge < 2020) {
+//         return 2020 - isAge
+//     }
+//     return false
+// }
+//
+// let answer = prompt("Rentrer une date entre 1950 et 2020")
+// if (getAge(answer)) {
+//     console.log("l'age de la personne est de " + getAge(answer) + " ans")
+// } else {
+//     console.log("Ce nest pas une date")
+// }
+
+let answer = prompt("Rentrer une date entre 1950 et 2020")
+
+if (getAge(answer)) {
+    console.log("l'age de la personne est de " + getAge(answer) + " ans")
+} else {
+    console.log("Ce nest pas une date")
+}
+
+function getAge(age) {
+
+    let isAge = Number(age);
+
+    if (isAge >= 1950 && isAge < 2020) {
+        return 2020 - isAge
     }
+    return false
 }
 
-function getSquare(number) {
+///////////////////////////////////////////////// FUNCTION NOT NUMBER /////////////////////////////////////////////////
+function isNumber(number) {
     let numberSet = Number(number)
-    numberSet = numberSet * numberSet
-    return numberSet
+    if (numberSet !== 0 && numberSet !== null && numberSet !== "" && !Number.isNaN(numberSet)) {
+        return true
+    }
+    return false
 }
-
-let answer = prompt("Rentrer un chiffre")
-
-console.log(getSquare(answer))
+///////////////////////////////////////////////// FUNCTION NOT NUMBER /////////////////////////////////////////////////

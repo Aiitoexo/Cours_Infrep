@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le positionnement en CSS</title>
+
+        <link rel="stylesheet" href="css/position.css">
+    </head>
+    <body>
+
+        <nav></nav>
+
+        <div class="container">
+
+            <main>
+
+                <h1>Le <span>positionnement</span> en css</h1>
+
+                <p>
+                    Il y a 5 modes de positionnement
+                </p>
+
+                <ul>
+                    <li>
+                        <strong><code>static</code></strong>: mode par défaut, c'est à dire que c'est le navigateur qui
+                        s'occupe de placer les éléments à l'écran, en suivant les règles habituelles (block, inline,
+                        respect des marges, ...)
+                    </li>
+                    <li>
+                        <strong><code>fixed</code></strong>: fixe par rapport à la fenêtre du navigateur
+                    </li>
+                    <li>
+                        <strong><code>sticky</code></strong>: collant par rapport à la fenêtre du navigateur, c.a.d
+                        qu'il est fixe tant que son parent est visible, mais qu'il sera "emporté" par son parent dès que
+                        celui ci sera "scrollé" hors de la page
+                    </li>
+                    <li>
+                        <strong><code>relative</code></strong>: relatif à la position "normale" de l'élément. Le
+                        navigateur positionne l'élément et tout le reste de manière naturelle, puis revient opérer les
+                        décalages nécessaires, sans que cela ne fasse bouger ce qui est dejà placé. Généralement, on
+                        s'en sert donc pour faire des petits décalages visuels lors de webdesign très particuliers
+                    </li>
+                    <li>
+                        <strong><code>absolute</code>:</strong> l'élément est placé <strong>par rapport à son plus
+                        proche parent positionné.</strong> Une astuce courante est donc de donner une <code>position:relative</code>
+                        au parent, de sorte qu'il serve de référence pour le positionnement de son enfant, sans que cela
+                        ne change quoi que ce soit pour le parent.
+                    </li>
+                </ul>
+
+                <footer>
+
+                </footer>
+
+            </main>
+
+            <div class="sidebar">
+
+                <aside>
+                    <div class="sticky"></div>
+                </aside>
+
+                <aside>
+                    <div class="sticky"></div>
+                </aside>
+
+            </div>
+        </div>
+
+
+        <button></button>
+
+
+    </body>
+</html>

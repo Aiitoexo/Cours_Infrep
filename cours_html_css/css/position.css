@@ -1,0 +1,101 @@
+*:not(code) {
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  position: static; /*  position "normale", autrement dit, aucun positionnement */
+  z-index: 1; /* ignoré car position static */
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+nav {
+  position: fixed; /* fixe par rapport à l'écran */
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 60px;
+
+  background-color: rgb(243, 106, 106);
+}
+
+.container {
+  display: flex;
+  width: 960px;
+  margin: 90px auto;
+}
+
+main {
+  /* 
+    Ne sert a rien visuellement pour cet élément.
+    Mais il sert de référence au positionnement absolu de ses enfants.
+  */
+  position: relative;
+
+  flex: 2;
+  height: 2000px;
+  padding: 20px;
+  background-color: #eee;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+aside {
+  padding: 20px;
+  height: 600px;
+  background-color: rgb(168, 168, 168);
+  margin-bottom: 20px;
+}
+
+footer {
+  /*
+  On positionne l'élément de manière absolue, par rapport au plus proche parent
+  positionné 
+  */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  /* occupe toute la largeur du parent */
+  width: 100%;
+
+  height: 200px;
+  background-color: rgb(244, 196, 84);
+}
+
+.sticky {
+  /* Fixe à l'écran tant que son parent est dans l'écran. */
+  position: sticky; 
+  top: 80px; /* décalage par rapport au haut de l'écran */
+
+  height: 200px;
+  background-color: rgb(62, 163, 106);
+}
+
+button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  display: block;
+  width: 50px;
+  height: 50px;
+  
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(243, 106, 106);
+}
+
+span {
+
+  /* relatif à la position "normale" de l'élément */
+  /* sert à faire des petits décalages visuels sans affecter le reste de la mise en page */
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
