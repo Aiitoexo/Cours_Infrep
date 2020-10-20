@@ -85,50 +85,50 @@ un message de bienvenue personnalisé
 
 
 
-////////////////////////////////////////////////////// CORRECTION /////////////////////////////////////////////////////
-
-
+// ////////////////////////////////////////////////////// CORRECTION /////////////////////////////////////////////////////
 //
-// let answer = prompt("Donnez un nombre");
 //
-// if (isEven(answer)) {
-//     console.log(answer + " est un nombre pair")
-// } else {
-//     console.log(answer + " est un nombre impair")
+// //
+// // let answer = prompt("Donnez un nombre");
+// //
+// // if (isEven(answer)) {
+// //     console.log(answer + " est un nombre pair")
+// // } else {
+// //     console.log(answer + " est un nombre impair")
+// // }
+//
+//
+// /*
+// Exercice 1 :
+// Créer un programme qui demande le prénom et le nom d’un utilisateur, puis affiche
+// un message de bienvenue personnalisé
+//  */
+//
+// let firstName = prompt("Quel est ton prénom ?");
+// if (firstName !== null) {
+//
+//     let lastName = prompt("Quel est ton nom de famille ?");
+//     if (lastName !== null) {
+//
+//         let message = getWelcomeMessage(firstName, lastName);
+//         console.log(message);
+//     }
 // }
-
-
-/*
-Exercice 1 :
-Créer un programme qui demande le prénom et le nom d’un utilisateur, puis affiche
-un message de bienvenue personnalisé
- */
-
-let firstName = prompt("Quel est ton prénom ?");
-if (firstName !== null) {
-
-    let lastName = prompt("Quel est ton nom de famille ?");
-    if (lastName !== null) {
-
-        let message = getWelcomeMessage(firstName, lastName);
-        console.log(message);
-    }
-}
-
-// Exercice 2 :
-// Créer un programme qui fait saisir un prix hors taxe à l’utilisateur puis affiche le prix
-// TTC correspondant (la TVA est a 20%)
-
-// PriceHT est de type "string", donc on ne peut pas faire de calcul avec.
-
-let priceHT = promptForNumber('Veuillez saisir un prix hors taxe valide');
-let priceVAT = computeVAT(priceHT);
-console.log("Le prix avec la TVA vaut : " + priceVAT);
-
-
-
-let age = promptForNumber('Quel age as tu ?');
-if (age < 10) { alert('trop petit !!!')}
+//
+// // Exercice 2 :
+// // Créer un programme qui fait saisir un prix hors taxe à l’utilisateur puis affiche le prix
+// // TTC correspondant (la TVA est a 20%)
+//
+// // PriceHT est de type "string", donc on ne peut pas faire de calcul avec.
+//
+// let priceHT = promptForNumber('Veuillez saisir un prix hors taxe valide');
+// let priceVAT = computeVAT(priceHT);
+// console.log("Le prix avec la TVA vaut : " + priceVAT);
+//
+//
+//
+// let age = promptForNumber('Quel age as tu ?');
+// if (age < 10) { alert('trop petit !!!')}
 
 //----------------------------------------------------------------------------------------------------------------------
 // Exercice : Le juste Prix
