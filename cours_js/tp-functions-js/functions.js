@@ -328,10 +328,10 @@ function setNumber(answer) {
 //     return nb;
 // }
 //
-// // un nombre entier aleatoire entre 0 et 10
-// function dé() {
-//     return parseInt(Math.random() * 6);
-// }
+// un nombre entier aleatoire entre 0 et 10
+function dé() {
+    return parseInt(Math.random() * 6);
+}
 //
 // // todo: vérifier que le dé équilibré !
 //
@@ -349,4 +349,4 @@ function randomLetter(alphabet) {
     return alphabet[Math.floor(Math.random() * alphabet.length)]
 }
 
-console.log(randomLetter(Alphabet_Cyrillique))
+console.log(randomLetter(Alphabet_Russe))

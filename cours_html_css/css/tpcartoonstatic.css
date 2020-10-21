@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid #d4d4d4;
-    box-shadow: inset 0px 0px 50px -1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 50px -1px rgba(0, 0, 0, 0.75);
 }
 
 .cloud-1, .cloud-1:before, .cloud-1:after,
@@ -684,9 +684,13 @@
     top: 215px;
 }
 
-.node {
-    background-color: #f50000;
-    height: 100px;
-    width: 100px;
-    clip-path: polygon(50% 90%, 0% 100%, 100% 100%);
+.rainbow {
+    position: absolute;
+    height: 400px;
+    background: rgb(255,0,0);
+    background: radial-gradient(circle, rgba(255,0,0,0) 45%, rgba(255,0,0,1) 45%, rgba(255,0,0,1) 50%, rgba(251,255,0,1) 54%, rgba(38,180,3,1) 60%, rgba(0,7,255,1) 66%, rgba(122,53,227,1) 71%, rgba(229,53,121,1) 83%);
+    width: 400px;
+    border-radius: 100%;
+    top: 550px;
+    left: 50px;
 }

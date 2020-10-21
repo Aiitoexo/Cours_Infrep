@@ -6,14 +6,26 @@ let warrior = {
     strength: 8,
     agility: 2,
     intellect: 1,
-    critical: function (){
-        return 10 * warrior.agility
+    critical: function () {
+        return 1.5 * warrior.agility
     },
     dodge: function () {
+        let chanceDodge = Math.floor((Math.random() * 2))
+        if (chanceDodge === 1) {
+            //todo: rajouter calcul AGI ESQ => + STA
+            return ""// retourne true esquive reussie;
+        } else {
+            return ""// retourne false esquive echouer
+        }
         // calcul taux d'esquive  suivant agility perso
     },
     parade: function () {
+        let paradeShield = Math.floor((Math.random() * 2))
+        let paradeWeapon = Math.floor((Math.random() * 3))
         // calcul taux de parade suivant arme ou shield equiper
+    },
+    ultimateSpell: function () {
+
     },
     spell: {
         // x Spell + stats +  function random spell
@@ -42,14 +54,17 @@ let assassin = {
     strength: 6,
     agility: 9,
     intellect: 3,
-    critical: function (){
-        return 10 * assassin.agility
+    critical: function () {
+        return 1.5 * assassin.agility
     },
     dodge: function () {
         // calcul taux d'esquive  suivant agility perso
     },
     parade: function () {
         // calcul taux de parade suivant arme ou shield equiper
+    },
+    ultimateSpell: function () {
+
     },
     spell: {
         // x Spell + stats +  function random spell
@@ -78,14 +93,17 @@ let mage = {
     strength: 2,
     agility: 6,
     intellect: 8,
-    critical: function (){
-        return 10 * mage.agility
+    critical: function () {
+        return 1.5 * mage.agility
     },
     dodge: function () {
         // calcul taux d'esquive  suivant agility perso
     },
     parade: function () {
         // calcul taux de parade suivant arme ou shield equiper
+    },
+    ultimateSpell: function () {
+
     },
     spell: {
         // x Spell + stats +  function random spell
@@ -114,14 +132,17 @@ let warlock = {
     strength: 2,
     agility: 6,
     intellect: 8,
-    critical: function (){
-        return 10 * warlock.agility
+    critical: function () {
+        return 1.5 * warlock.agility
     },
     dodge: function () {
         // calcul taux d'esquive  suivant agility perso
     },
     parade: function () {
         // calcul taux de parade suivant arme ou shield equiper
+    },
+    ultimateSpell: function () {
+
     },
     spell: {
         // x Spell + stats +  function random spell
@@ -151,13 +172,16 @@ let hunter = {
     agility: 7,
     intellect: 2,
     critical: function () {
-        return 10 * hunter.agility
+        return 1.5 * hunter.agility
     },
     dodge: function () {
         // calcul taux d'esquive  suivant agility perso
     },
     parade: function () {
         // calcul taux de parade suivant arme ou shield equiper
+    },
+    ultimateSpell: function () {
+
     },
     spell: {
         // x Spell + stats +  function random spell
