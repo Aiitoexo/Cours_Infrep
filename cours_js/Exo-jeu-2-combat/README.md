@@ -43,4 +43,4 @@
     
     ### Dieu du vin ! 
         - Vie : 100
-         - Attaque : 
+         - Attaque : !

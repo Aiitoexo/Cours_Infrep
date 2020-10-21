@@ -33,7 +33,7 @@ function launchGame() {
         // TODO: le player1 est avantagé car il attaque tj en premier
         console.log("_____________________________________________________________________________")
         console.log("Round " + currentRound)
-        console.log("_____________________________________________________________________________")
+        console.log("____________________________________________-_________________________________")
         player1.attack(player2);
         player2.attack(player1);
         currentRound++
