@@ -1,4 +1,5 @@
 let FireGod = {
+    name: null,
     stamina: 100,
     strength: 20,
     isAlive: function () {
@@ -34,11 +35,11 @@ let FireGod = {
         if (this.stamina > 0 && target.stamina > 0) {
             if (atkRandom <= 50) {
                 target.stamina -= 20
-                console.log("Attaque réussi l'adversaire a perdu 20 en stamina")
+                console.log(this.name +" : Attaque réussi, " + target.name + " a perdu 20 PV il lui reste " + target.stamina + " PV")
             } else {
-                console.log("Attaque échouer")
+                console.log(this.name + " A échouer !")
             }
-        }
+        } console.log("----------------------------------------------------------------")
     }
 }
 
@@ -47,6 +48,7 @@ let FireGod = {
 
 
 let ThunderGod = {
+    name: null,
     stamina: 100,
     strength: 10,
     isAlive: function () {
@@ -81,10 +83,10 @@ let ThunderGod = {
         if (this.stamina > 0 && target.stamina > 0) {
             if (atkRandom <= 80) {
                 target.stamina -= 10
-                console.log("Attaque reussi, " + target + " a perdu 10 en stamina")
+                console.log(this.name +" : Attaque réussi, " + target.name + " a perdu 10 PV il lui reste " + target.stamina + " PV")
             } else {
-                console.log("Attaque échouer")
+                console.log(this.name + " A échouer !")
             }
-        }
+        } console.log("----------------------------------------------------------------")
     }
 }

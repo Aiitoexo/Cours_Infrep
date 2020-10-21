@@ -3,22 +3,13 @@
 let player1 = Object.create(FireGod);
 let player2 = Object.create(ThunderGod);
 
-while(player1.isAlive() && player2.isAlive()) {
+player1.name = prompt("Saisissez le nom du joueur 1")
+player2.name = prompt("Saisissez le nom du joueur 2")
 
-    // TODO: le player1 est avantagé car il attaque tj en premier
-
-    // le joueur 1 attaque le joueur 2 ...
-    player1.attack(player2);
-    // ... le joueur 2 riposte
-    player2.attack(player1);
-}
-
-// si on arrive la, au moins un des deux joueurs est mort !
-
-if (player1.isAlive() && player2.isDead()) {
-    console.log("WINNER player 1")
-} else if (player2.isAlive() && player1.isDead()) {
-    console.log("WINNER player 2")
+if (validateName(player1.name) && validateName(player2.name)) {
+    launchGame();
 } else {
-    console.log('Égalité !')
+    player1.name = "Player 1";
+    player2.name = "Player 2";
+    launchGame();
 }
