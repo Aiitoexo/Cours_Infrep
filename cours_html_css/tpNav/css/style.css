@@ -1,0 +1,115 @@
+
+
+
+
+.nav {
+    height: 450px;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+
+.navItems {
+    height: 350px;
+    width: 250px;
+    border-radius: 25px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #a0a0a0;
+    box-shadow: 0px 0px 10px 4px #838383;
+}
+
+.items {
+    display: flex;
+    background-color: #ffffff;
+    height: 65px;
+    margin: 0;
+    border-bottom: 2px solid #bcbcbc;
+}
+
+.items:hover {
+    background-color: #e5e5e5;
+    transition: ease 0.3s;
+}
+
+.disconect {
+    position: relative;
+    height: 100px;
+    width: 250px;
+    background-color: #d9d9d9;
+    color: #ff3535;
+}
+
+.disconect:hover {
+    background-color: #ff3535;
+    color: white;
+    transition: ease 0.5s;
+}
+
+.text-disconect{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    top: 22px;
+    font-family: Spartan, sans-serif;
+    font-weight: 500;
+}
+
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+    font-family: Spartan, sans-serif;
+}
+
+
+.text-item {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+.buttonNav {
+    background-color: #ff4949;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    box-shadow: 0px 0px 10px 4px #838383;
+    color: white;
+}
+
+.buttonNav:hover {
+    color: #000001;
+    background-color: white;
+}
+
+
+.cross {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif, sans-serif;
+    font-size: 60px;
+    margin-top: -8px;
+}
+
+.cross:hover{
+    transform: rotate(45deg) ;
+    transition: ease 0.3s;
+}
+
+
+
+
+
+
+
